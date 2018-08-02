@@ -1,5 +1,3 @@
-# grid
-
 # File index.html
 The file is about designing HTML with Grid  by using display: grid and grid-template-columns
 
