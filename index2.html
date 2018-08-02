@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .wraper {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            /* grid-auto-rows: 100%; */
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .wraper > div {
+            background: #eee;
+            padding: 1em;
+        }
+        .wraper > div:nth-child(odd) {
+            background: #ddd;
+        }
+        .nested > div {
+            background: #eee;
+            padding: 1em;
+        }
+    </style>
+    <title>CSS GRids</title>
+</head>
+<body>
+    <div class="wraper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo veniam, molestiae id doloremque iure magni cumque voluptatibus quis atque dolor maiores, ex minima itaque dicta optio ut consequuntur unde provident harum numquam molestias perferendis delectus, culpa aspernatur. Numquam doloribus eos in ipsa cupiditate, dolorum officiis laboriosam mollitia alias commodi beatae obcaecati ea! Ipsa quidem voluptatem explicabo asperiores accusamus reiciendis fugiat accusantium maxime! Sit, qui facilis. Neque beatae voluptatem pariatur, soluta eum iste rem ab, possimus itaque omnis ea harum voluptas.
+        </div>
+        <div class="nested">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non.
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>
